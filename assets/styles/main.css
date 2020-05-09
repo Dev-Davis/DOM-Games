@@ -6,3 +6,25 @@ td
     border: 5px solid black;
     font-size: 100px;
 }
+
+.turnBlue
+{
+    color: white;
+    background-color: blue;
+    border: 3px solid black;
+}
+
+.game-title
+{
+    padding: 2rem 0;
+}
+
+.inputBox
+{
+    padding: 3rem 0;
+}
+
+input
+{
+    padding: 0 1rem;
+}

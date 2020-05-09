@@ -11,11 +11,11 @@
 <body>
     <div class="container">
         <div class="jumbotron">
-            <h3 class="text-center">Welcome to Tic Tac Toe</h3>
-            <p class="text-center">Get ready to play</p>
-            <button id="buttn" class="btn btn-primary">Reset</button>
+            <h3 class="text-center">Welcome to Game Board</h3>
+            <p class="text-center">Get ready to play!</p>
+            <button id="buttn" class="btn btn-primary col-2 offset-5">Reset</button>
         </div>
-
+        <h3 class="game-title text-center">Tic-Tac-Toe</h3>
         <table align="center">
             <tr>
                 <td id="one"></td>
@@ -33,10 +33,23 @@
                 <td></td>
             </tr>
         </table>
+        <div class="inputBox">
+            <input type="text" class="col-4 offset-4"><input type="submit"></input>
+        </div>
+
+        <div class="container">
+            <h3 class="game-title text-center">Connect 4</h3>
+        </div>
     </div>
 
 
+
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
     <script src="/assets/scripts/main.js"></script>
+    <script src="/assets/scripts/myScripts.js"></script>
     <script src="/assets/scripts/bootstrap.min.js"></script>
 </body>
 </html>
