@@ -1,1 +1,1 @@
-# tic-tac-toe
+# dom-games
