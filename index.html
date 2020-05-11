@@ -11,11 +11,12 @@
 <body>
     <div class="container">
         <div class="jumbotron">
-            <h3 class="text-center">Welcome to Tic Tac Toe</h3>
-            <p class="text-center">Get ready to play</p>
-            <button id="buttn" class="btn btn-primary">Reset</button>
+            <h3 class="text-center">Welcome to Game Board</h3>
+            <p class="text-center">Get ready to play!</p>
+            <button id="buttn" class="btn btn-primary col-2 offset-5">Reset</button>
         </div>
-
+        <!-- Tic Tac Toe Game -->
+        <h3 class="game-title text-center">Tic-Tac-Toe</h3>
         <table align="center">
             <tr>
                 <td id="one"></td>
@@ -33,10 +34,84 @@
                 <td></td>
             </tr>
         </table>
-    </div>
+        <div class="inputBox">
+            <input type="text" class="col-4 offset-4">
+        </div>
+        <input type="submit" class="sub-btn col-4 offset-4"></input>
 
-
-    <script src="/assets/scripts/main.js"></script>
+        <!-- Connect 4 Game -->
+        <div class="container" align="center">
+            <h3 class="game-title-connect-four text-center">Connect Four</h3>
+            <h4 classs="text-center">Connect 4 chips to win!!!</h4>
+            
+            <table class="board">
+                <tr>
+                    <td><button type="button"></button></td>
+                    <td><button type="button"></button></td>
+                    <td><button type="button"></button></td>
+                    <td><button type="button"></button></td>
+                    <td><button type="button"></button></td>
+                    <td><button type="button"></button></td>
+                    <td><button type="button"></button></td>
+                </tr>
+                <tr>
+                    <td><button type="button"></button></td>
+                    <td><button type="button"></button></td>
+                    <td><button type="button"></button></td>
+                    <td><button type="button"></button></td>
+                    <td><button type="button"></button></td>
+                    <td><button type="button"></button></td>
+                    <td><button type="button"></button></td>
+                </tr>
+                <tr>
+                    <td><button type="button"></button></td>
+                    <td><button type="button"></button></td>
+                    <td><button type="button"></button></td>
+                    <td><button type="button"></button></td>
+                    <td><button type="button"></button></td>
+                    <td><button type="button"></button></td>
+                    <td><button type="button"></button></td>
+                </tr>
+                <tr>
+                    <td><button type="button"></button></td>
+                    <td><button type="button"></button></td>
+                    <td><button type="button"></button></td>
+                    <td><button type="button"></button></td>
+                    <td><button type="button"></button></td>
+                    <td><button type="button"></button></td>
+                    <td><button type="button"></button></td>
+                </tr>
+                <tr>
+                    <td><button type="button"></button></td>
+                    <td><button type="button"></button></td>
+                    <td><button type="button"></button></td>
+                    <td><button type="button"></button></td>
+                    <td><button type="button"></button></td>
+                    <td><button type="button"></button></td>
+                    <td><button type="button"></button></td>
+                </tr>
+                <tr>
+                    <td><button type="button"></button></td>
+                    <td><button type="button"></button></td>
+                    <td><button type="button"></button></td>
+                    <td><button type="button"></button></td>
+                    <td><button type="button"></button></td>
+                    <td><button type="button"></button></td>
+                    <td><button type="button"></button></td>
+                </tr>
+            </table>
+        </div>
+            
+        </div>
+        
+        
+        
+        <script
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+    <!-- <script src="/assets/scripts/main.js"></script> -->
+    <script src="/assets/scripts/myScripts.js"></script>
     <script src="/assets/scripts/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,8 +1,61 @@
-td 
+/* Tic tac toe game */
+
+/* td 
 {
     height: 150px;
     width: 150px;
     text-align: center;
     border: 5px solid black;
     font-size: 100px;
+}
+
+.turnBlue
+{
+    color: white;
+    background-color: blue;
+    border: 3px solid black;
+}
+
+.game-title
+{
+    padding: 2rem 0;
+}
+
+.game-title-connect-four
+{
+    padding-top: 2rem;
+}
+
+.inputBox
+{
+    padding: 3rem 0;
+}
+
+input
+{
+    padding: 0 1rem;
+    border-radius: 4px;
+}
+
+.sub-btn
+{
+    border-radius: 2rem;
+    color: white;
+    background-color: rgb(100, 144, 216);
+    height: 2rem;
+    border: 1px solid black;
+    box-shadow: 3px 3px 5px black;
+} */
+
+
+/* Connect Four game */
+
+.board button
+{
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    margin: 1px;
+    border-radius: 50%;
+    border: 4px solid black;
 }
