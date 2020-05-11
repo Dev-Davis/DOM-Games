@@ -10,9 +10,9 @@ $('input').eq(0).keypress(function(e) {
 })
 
 // on() method
-$('h3').on('mouseenter', function() {
-    $(this).toggleClass('turnBlue');
-})
+// $('h3').on('mouseenter', function() {
+//     $(this).toggleClass('turnBlue');
+// })
 
 //events and animations
 $('input').eq(1).on('click', function() {
