@@ -106,6 +106,21 @@ function verticalWinCheck() {
     }
 }
 
+const currentPlayer = 1;
+const currenName = player1;
+let currentColor = player1Color;
+
+$('h3').text(player1 + " it is your turn. Pick a column to drop in.")
+
+
+$('.board button').on('click', function() {
+    let col = $(this).closest('td').index();
+    let bottomAvail = checkBottom(col);
+    changeColor(bottomAvail, col, changeColor);
+    if(horizontalWinCheck() || verticalWinCheck() || diagonalWinCheck()) {
+        $('h1').text(currenName + "You won!");
+    }
+})
 
 
 
