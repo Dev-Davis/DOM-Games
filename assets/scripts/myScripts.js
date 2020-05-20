@@ -37,6 +37,10 @@ function repotWin(rowNum, colNum) {
     console.log(colNum);
 }
 
+function changeColor(rowIndex, colIndex, color) {
+    return table.eq(rowIndex).find('td').eq(colIndex).find('button').css('background-color', color);
+}
+
 //---------- report back color
 function returnColor(rowIndex, colIndex) {
     return table.eq(rowIndex).find('td').eq(colIndex).find('button').css('background-color');
@@ -107,8 +111,8 @@ function verticalWinCheck() {
 }
 
 const currentPlayer = 1;
-const currenName = player1;
-let currentColor = player1Color;
+const currentName = player1;
+const currentColor = player1Color;
 
 $('h3').text(player1 + " it is your turn. Pick a column to drop in.")
 
@@ -116,9 +120,23 @@ $('h3').text(player1 + " it is your turn. Pick a column to drop in.")
 $('.board button').on('click', function() {
     let col = $(this).closest('td').index();
     let bottomAvail = checkBottom(col);
-    changeColor(bottomAvail, col, changeColor);
+    changeColor(bottomAvail, col, currentColor);
+    
     if(horizontalWinCheck() || verticalWinCheck() || diagonalWinCheck()) {
-        $('h1').text(currenName + "You won!");
+        $('h1').text(currentName + "You won!");
+        $('h3').fadeOut('fast');
+        $('h2').fadeOut('fast');        
+    } 
+    currentPlayer = currentPlayer * -1;
+
+    if (currentPlayer === 1) {
+        currentName = player1;
+        $('h3').text(currentName + " it is your turn.");
+        currentColor = player1Color;
+    } else {
+        currentName = player2;
+        $('h3'). text(currentName + " it is your turn.");
+        currentColor = player2Color;
     }
 })
 
